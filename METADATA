@@ -1,0 +1,13 @@
+{
+  "entries": 0,
+  "features": {
+    "id": "STRING",
+    "shape": [
+      "INT64"
+    ],
+    "codes": "BYTES",
+    "caption": "STRING",
+    "text": "STRING",
+    "flow": "FLOAT32"
+  }
+}

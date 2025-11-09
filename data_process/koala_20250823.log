@@ -1,0 +1,16 @@
+[2025-11-08 18:57:22,350] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/launcher/runner.py", line 470, in main
+    subprocess.check_call(safe_ssh_cmd, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+  File "/usr/lib/python3.10/subprocess.py", line 369, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['ssh', '-o', 'PasswordAuthentication=no', 'job-547646f5-6185-468b-8106-394d358193a3-master-0', 'hostname']' returned non-zero exit status 255.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/deepspeed", line 6, in <module>
+    main()
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/launcher/runner.py", line 472, in main
+    raise RuntimeError(
+RuntimeError: Using hostfile at /share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/9_nodes_deepspeed.hostfile but host=job-547646f5-6185-468b-8106-394d358193a3-master-0 was not reachable via ssh. If you are running with a single node please remove /share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/9_nodes_deepspeed.hostfile or setup passwordless ssh.
