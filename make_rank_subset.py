@@ -44,9 +44,9 @@ print("VID={}".format(vid_size))
 
 ranks, img_devices = list(range(72)), 0  # 72个GPU全部用于视频训练
 vid_ranks, img_ranks = ranks, []  # 所有ranks分配给视频,图像为空
-out = "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_training_r72/"  # TODO: 修改为你的输出目录路径
+out = "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_training_r72_v1/"  # TODO: 修改为你的输出目录路径
 
-np.random.seed(3337)
+np.random.seed(1234)
 vid_files = sum(
     [[os.path.join(d, x) for x in os.listdir(d) if x.endswith(".data")] for d in vid_datasets],
     [],

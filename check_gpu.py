@@ -2,7 +2,7 @@ import subprocess
 from pathlib import Path
 from typing import List
 
-HOSTFILE = Path("/share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/9_nodes_deepspeed.hostfile")
+HOSTFILE = Path("/share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/shilin_10node.hostfile")
 NVIDIA_SMI_QUERY = "nvidia-smi --query-gpu=index,name,memory.used,memory.total,utilization.gpu --format=csv,noheader,nounits"
 
 
