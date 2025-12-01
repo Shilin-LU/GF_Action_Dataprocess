@@ -48,7 +48,7 @@ features = {
     "text": "STRING",
     "flow": "FLOAT32",
 }
-collect_recrods("/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_269_cache", features)
+collect_recrods("/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_flow10_cache", features)
 
 # features = {
 #     "id": "STRING",

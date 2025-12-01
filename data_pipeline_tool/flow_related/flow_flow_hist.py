@@ -72,8 +72,8 @@ def plot_hist(flows: List[float], output_path: Path, bins: int = 80) -> None:
 
 def parse_args() -> argparse.Namespace:
     default_dirs = [
-        Path("/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/data_2003_tag"),
-        Path("/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/data_269_tag"),
+        Path("/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/data_flow10_tag"),
+        # Path("/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/data_269_tag"),
     ]
 
     parser = argparse.ArgumentParser(description="Compute flow histogram and 40% percentile")

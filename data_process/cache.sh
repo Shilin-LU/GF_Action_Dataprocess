@@ -24,11 +24,11 @@ export PYTHONPATH=/share/project/panting/share_models/simple_ursa
 # --vae /share/project/panting/mm_ckpt/vq/cosmos_4x8x8 > skywork_youtube.log 2>&1 &
 
 nohup deepspeed --no_local_rank --master_port 27862 \
--H /share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/9_nodes_deepspeed.hostfile \
+-H /share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/shilin_10node.hostfile \
 /share/project/denghaoge/shilinlu/dataset/GF-Minecraft/data_process/cache_decord320.py \
---record /share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_269_cache \
---jsons /share/project/denghaoge/shilinlu/dataset/GF-Minecraft/data_269_tag \
---vae /share/project/panting/mm_ckpt/vq/cosmos_4x8x8 > GF_269_cache.log 2>&1 &
+--record /share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_flow10_cache \
+--jsons /share/project/denghaoge/shilinlu/dataset/GF-Minecraft/data_flow10_tag \
+--vae /share/project/panting/mm_ckpt/vq/cosmos_4x8x8 > GF_flow10_cache.log 2>&1 &
 
 # nohup deepspeed --no_local_rank --master_port 43338 \
 # -H /share/project/panting/configs/deepspeed/deng16.hostfile \

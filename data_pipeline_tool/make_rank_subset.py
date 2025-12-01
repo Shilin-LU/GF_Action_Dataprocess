@@ -26,8 +26,8 @@ def make_dataset(data_files, data_ranks, metadata):
 
 
 vid_datasets = [
-    "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF2003cache_150225",  # TODO: 替换成你的第1个视频数据集路径
-    "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF269cache_20175",  # TODO: 替换成你的第2个视频数据集路径
+    "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GFflow10cacher72_17554"  # TODO: 替换成你的第1个视频数据集路径
+    # "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF269cache_20175",  # TODO: 替换成你的第2个视频数据集路径
 ]
 
 img_datasets = []  # 没有图像数据
@@ -44,7 +44,7 @@ print("VID={}".format(vid_size))
 
 ranks, img_devices = list(range(72)), 0  # 72个GPU全部用于视频训练
 vid_ranks, img_ranks = ranks, []  # 所有ranks分配给视频,图像为空
-out = "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_training_r72_v1/"  # TODO: 修改为你的输出目录路径
+out = "/share/project/denghaoge/shilinlu/dataset/GF-Minecraft/GF_training_r72_flow10/"  # TODO: 修改为你的输出目录路径
 
 np.random.seed(1234)
 vid_files = sum(

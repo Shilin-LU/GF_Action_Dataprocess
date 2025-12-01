@@ -38,7 +38,7 @@ def _iter_hosts(hostfile_path: str) -> Iterable[str]:
 
 if __name__ == "__main__":
     repo_root = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-    hostfile = "/share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/9_nodes_deepspeed.hostfile"
+    hostfile = "/share/project/denghaoge/shilinlu/proj/simple_ursa/accelerate_configs/shilin_10node.hostfile"
 
     cache_script = os.path.join(repo_root, "data_process", "cache_videos.py")
     cache_launcher = os.path.join(repo_root, "data_process", "cache.sh")
